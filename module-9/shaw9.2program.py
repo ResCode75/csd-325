@@ -12,6 +12,8 @@ print(f"--CONNECTION TEST--\n{response.status_code}\n")
  # D&D 5th Edition ability scores as unformatted json 
 print(f"--ABILITY SCORES JSON--\n{response.json()}\n")
 
+print(response.json)
+
 # Function to convert response into a formatted JSON string
 def jprint(obj):
     text = json.dumps(obj, sort_keys = True, indent = 4)
